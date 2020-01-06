@@ -38,6 +38,7 @@ Jump to a specific source:
   - [API-Football](#apifootball)
   - [ScoreBat Video API](#scorebat)
 - Commercial APIs
+  - [ElenaSport.io](https://elenasport.io)
   - [football-api.com](#footballapi)
   - [CrowdScores and FastestLiveScores API](#CrowdScores)
   - [SPAPI](#spapi)
@@ -384,6 +385,89 @@ Example for Match by ID - Endpoint Response (Real Madrid vs PSG - 2019-11-26). U
 ...
 ```
 
+<a name="elenasport.io"></a>
+#### ElenaSport.io
+[ElenaSport.io](https://elenasport.io) is a freemium REST api service. 
+
+ElenaSport was built to be easy-to-use; check it out some endpoints:
+
+```
+  https://elenasport-io1.p.rapidapi.com/v1/countries
+  https://elenasport-io1.p.rapidapi.com/v1/countries/:id/leagues
+  https://elenasport-io1.p.rapidapi.com/v1/fixtures/:id
+  ...
+```
+
+and it provides deep details of each match
+```
+{
+    "results": [
+        {
+            "id": 47787,
+            "idSeason": 594,
+            "seasonName": "2019/2020",
+            "idHome": 1408,
+            "homeName": "Sevilla FC",
+            "idAway": 1416,
+            "awayName": "Athletic Club Bilbao",
+            "idStage": 458,
+            "idVenue": 1216,
+            "venueName": "Estadio Ramón Sánchez Pizjuán",
+            "date": "2020-01-03 20:00:00",
+            "status": "finished",
+            "round": 19,
+            "attendance": null,
+            "team_home_90min_goals": 1,
+            "team_away_90min_goals": 1,
+            "team_home_ET_goals": 0,
+            "team_away_ET_goals": 0,
+            "team_home_PEN_goals": 0,
+            "team_away_PEN_goals": 0,
+            "team_home_1stHalf_goals": 0,
+            "team_away_1stHalf_goals": 1,
+            "team_home_2ndHalf_goals": 1,
+            "team_away_2ndHalf_goals": 0,
+            "elapsed": 0,
+            "elapsedPlus": 0,
+            "eventsHash": "dd46c3eebb1884ff3b5258c0a2fc9398e560a29e0780d4b53869b6254aa46a96",
+            "lineupsHash": "6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e",
+            "statsHash": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0",
+            "referees": [
+                {
+                    "type": "referee",
+                    "idReferee": 30787,
+                    "refereeName": "José Luis González González"
+                },
+                {
+                    "type": "assitant referee",
+                    "idReferee": 30815,
+                    "refereeName": "Rubén Becerril"
+                },
+                {
+                    "type": "assitant referee",
+                    "idReferee": 30823,
+                    "refereeName": "Diego Sánchez"
+                },
+                {
+                    "type": "assitant referee",
+                    "idReferee": 31331,
+                    "refereeName": "Marcos Latorre"
+                }
+            ]
+        }
+    ],
+    "page": 1,
+    "itemsPerPage": 20
+}
+```
+
+ The service is really cheap and there is also a sandbox plan that gives you access to all the endpoint and up to 80 calls each day free of charge. 
+ 
+- BASIC PLAN   0$
+- PRO PLAN    10$
+- ULTRA PLAN  25$
+- MEGA PLAN   50$
+ 
 <a name="footballapi"></a>
 #### football-api
 
